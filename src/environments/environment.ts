@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  apiUrl: 'https://aquila-api.wizertestserver.com/api/v2/internal/addresses/countries/web-client/open',
+  // apiUrl: 'https://60a9736a20a641001730727d.mockapi.io/'
+  // apiUrl: 'https://the-sneaker-database.p.rapidapi.com/sneakers'
 };
 
 /*

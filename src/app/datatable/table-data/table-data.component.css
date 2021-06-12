@@ -1,0 +1,13 @@
+img {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.c_name {
+    min-width: 200px !important;
+}
+
+::ng-deep table.dataTable td.dataTables_empty {
+    display: none;
+}

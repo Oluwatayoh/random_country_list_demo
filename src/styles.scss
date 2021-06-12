@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("//fonts.googleapis.com/css?family=Nunito");
+// $fa-font-path: "../node_modules/font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";
+
+body {
+  background-color: rgb(220, 220, 220);
+  font-family: Nunito;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #0e72ee;
+}
+
+.dataTables_wrapper {
+  width: 100% !important;
+}
+.container {
+  padding: 2rem 5rem;
+}
+
+.card svg.material-icons path {
+  fill: #888;
+}
+
+.search-container {
+  padding: 0rem 0rem 0rem 1rem;
+  margin: 1rem 0rem;
+  background-color: #fafafa;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    background-color: transparent;
+    border: 0px solid;
+    width: 100%;
+  }
+
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card {
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  // margin: 0 8px 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.card-container .card:not(:last-child) {
+  margin-right: 0;
+}
+
+.card.card-small {
+  height: 16px;
+  width: 168px;
+}
+
+.card-container .card:not(.highlight-card) {
+  cursor: pointer;
+}
+
+.card-container .card:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.card-container .card:not(.highlight-card):hover .material-icons path {
+  fill: rgb(105, 103, 103);
+}
+
+.card.highlight-card {
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  border: none;
+  width: auto;
+  min-width: 30%;
+  position: relative;
+}
+
+.card.card.highlight-card span {
+  margin-left: 60px;
+}
+
+.app-row {
+  display: flex;
+  align-items: center;
+}
+.space {
+  width: 2rem;
+}
+
+.btnn {
+  width: 60px;
+  padding: 1rem;
+  color: #fff;
+  background-color: #0e72ee;
+  border-radius: 0px 20px 20px 0px;
+  justify-content: center;
+  align-content: center;
+}
+
+.btnn:hover {
+  background-color: #0e73eea6;
+  cursor: pointer;
+  i {
+    font-size: 20px;
+  }
+}
+
+tr {
+  background-color: #ffffff00 !important;
+}
+
+th {
+  padding: 10px 10px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+}
