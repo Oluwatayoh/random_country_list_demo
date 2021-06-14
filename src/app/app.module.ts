@@ -7,11 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataTablesModule } from 'angular-datatables';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SearchTableComponent } from './search-table/search-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableDataComponent
+    TableDataComponent,
+    SearchTableComponent
   ],
   imports: [
     BrowserModule,

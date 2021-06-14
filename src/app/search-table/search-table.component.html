@@ -1,0 +1,10 @@
+<div class="app-row">
+    <div class="col-5 search-container">
+        <input type="text" placeholder="Search country by alphabet or name" (keyup.enter)="search()"
+            [(ngModel)]="searchInput">
+        <div class="btnn" (click)="search()">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+
+</div>

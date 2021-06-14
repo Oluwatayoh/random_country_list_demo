@@ -4,12 +4,6 @@ import { Subject } from 'rxjs';
 import { CountriesService } from 'src/services/data.service';
 
 
-class DataTablesResponse {
-  data: any[];
-  draw: number;
-  recordsFiltered: number;
-  recordsTotal: number;
-}
 
 @Component({
   selector: 'app-table-data',
@@ -25,7 +19,7 @@ export class TableDataComponent implements OnInit {
   dtOptions: any = {};
   countries: [] = [];
 
-  searchInput;
+
 
   constructor(private countryService: CountriesService) { }
 
@@ -61,22 +55,6 @@ export class TableDataComponent implements OnInit {
   }
   ngAfterViewInit(): void {
     this.dtTrigger.next();
-  }
-
-
-  search() {
-    // if (this.searchInput != "") {
-    //   this.countryService.getCountriesByName(this.searchInput).subscribe(data => {
-    //     const ct = JSON.stringify(data);
-    //     this.countries = JSON.parse(ct);
-    //   });
-    // } else {
-    //   this.countryService.getAllCountires().subscribe(data => {
-    //     const ct = JSON.stringify(data);
-    //     this.countries = JSON.parse(ct);
-    //   });
-    // }
-
   }
 }
 
